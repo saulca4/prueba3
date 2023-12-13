@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+	<title>
+		Formulario Examen
+	</title>
+	<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+</head>
+<body>
+	<h1>Inscripcion San Silvestre</h1>
+	<form name='formulario_examen' method='post' action='http://localhost/procesa.php'>
+		<select name="tipo" >	
+			<option >Elija el tipo de inscripción </option>
+			<option value='federado'>Atleta federado</option>
+			<option value='popular'>Popular</option>
+			<option value='menores'>Menores de 12 años</option>
+		</select><br>
+		Datos corredor <input type='text' name='nombre'><br>
+		e-mail corredor <input type='email' name='mail'><br>
+		¿Has corrido más veces? <label><input type='radio' name='antiguo' value='si'>Si</label> 
+		<label><input type='radio' name='antiguo' value='no'>No</label><br>
+		<label>Necesitas asistencia<input type='checkbox' name='asistencia'></label> 
+		<label>Confirmas que los datos son correctos<input type='checkbox' name='confirma'></label> <br>
+		<input type='submit' value='Inscribirse'>
+		<input type='reset' value='Reiniciar'>
+	</form>
+	</body>
+</html>
